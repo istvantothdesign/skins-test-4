@@ -71,7 +71,7 @@ function brandColors() {
       body.style.background = bodyBg;
       break;
     case "amazon":
-      bodyBg = "white";
+      bodyBg = "green";
 
       // Set brand colours
       brandColor1 = "#C49991";
