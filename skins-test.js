@@ -71,15 +71,15 @@ function brandColors() {
       body.style.background = bodyBg;
       break;
     case "amazon":
-      bodyBg = "green";
+      bodyBg = "white";
 
       // Set brand colours
-      brandColor1 = "#C49991";
-      brandColor2 = "#60656F";
-      brandColor3 = "#131112";
-      gradientColor1 = "#C49991";
-      gradientColor2 = "#60656F";
-      gradientColor3 = "#131112";
+      brandColor1 = "#036995";
+      brandColor2 = "#0096D6";
+      brandColor3 = "#30AFE5";
+      gradientColor1 = "#30AFE5";
+      gradientColor2 = "#0096D6";
+      gradientColor3 = "#027EB3";
       gradientColor4 = "#027EB3";
 
       // Link to the logo image
