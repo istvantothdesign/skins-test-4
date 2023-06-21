@@ -119,6 +119,47 @@ function brandColors() {
       }
 
       break;
+    case "bespak":
+      bodyBg = "blue";
+
+      // Set brand colours
+      brandColor1 = "#036995";
+      brandColor2 = "#0096D6";
+      brandColor3 = "#30AFE5";
+      gradientColor1 = "#30AFE5";
+      gradientColor2 = "#0096D6";
+      gradientColor3 = "#027EB3";
+      gradientColor4 = "#027EB3";
+
+      // Link to the logo image
+      navLogo.children[0].src =
+        "https://astutis.github.io/moodle/Images/Theme/ClientLogos/amazon-logo-skins.png";
+
+      // You can leave these as they are OR...
+      // Change loading animation colour here
+      transition.style.setProperty("--astloader", brandColor1);
+
+      // Change topic colours here
+      for (let i = 0; i < topic1.length; i++) {
+        const topic = topic1[i];
+
+        topic.style.borderLeftColor = brandColor1;
+      }
+      for (let i = 0; i < topic2.length; i++) {
+        const topic = topic2[i];
+
+        topic.style.borderLeftColor = brandColor2;
+      }
+      // Leave this as it is
+      body.style.background = bodyBg;
+
+      if (welcomeMessageAmazon != undefined) {
+        console.log("Worked!");
+        welcomeMessageAmazon.classList.remove("d-none");
+        welcomeMessageAstutis.classList.add("d-none");
+      }
+
+      break;
     case "":
       bodyBg = `url("https://learning.astutis.com/theme/image.php/astutis/theme/1656920572/site/theme-astutis-bg")`;
 
